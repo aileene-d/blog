@@ -8,13 +8,16 @@ class UserHeader extends Component {
   }
 
   render() {
-    console.log("user", this.props);
     const { user } = this.props;
 
     if (!user) {
       return null;
     }
-    return <div className="header">{user.name}</div>;
+    return (
+      <div>
+        <div className="header">{user.name}</div>
+      </div>
+    );
   }
 }
 
